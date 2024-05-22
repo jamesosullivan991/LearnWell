@@ -33,7 +33,7 @@ const VideoForm: React.FC = () => {
     onSubmit: async (values, { setSubmitting }) => {
       try {
         await api.createVideo(values);
-        router.push('/videos');
+        router.push('/');
       } catch (error) {
         console.error('Error submitting form:', error);
         setSubmitError('Failed to submit form. Please try again.');
